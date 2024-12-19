@@ -104,7 +104,7 @@ checksum = "edf3ee19dbc0a46d740f6f0926bde8c50f02bdbc7b536842da28f6ac56513a8b"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -252,7 +252,7 @@ dependencies = [
  "cargo-options",
  "clap",
  "dirs",
- "fs-err",
+ "fs-err 2.11.0",
  "indicatif",
  "native-tls",
  "paste",
@@ -267,18 +267,18 @@ dependencies = [
 
 [[package]]
 name = "cargo-zigbuild"
-version = "0.19.3"
+version = "0.19.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e700178b11124560cdbabc8808e938fe6d77abde036b77a4c03a191b02bac854"
+checksum = "04cc649328f39bbf1ef92ef753406e1785ff1074941c398e5214b6c74d318a9e"
 dependencies = [
  "anyhow",
  "cargo-config2",
  "cargo-options",
- "cargo_metadata",
+ "cargo_metadata 0.19.1",
  "clap",
  "crc",
  "dirs",
- "fs-err",
+ "fs-err 3.0.0",
  "path-slash",
  "rustc_version",
  "rustflags",
@@ -286,8 +286,8 @@ dependencies = [
  "serde",
  "serde_json",
  "shlex",
- "target-lexicon",
- "which 6.0.3",
+ "target-lexicon 0.13.0",
+ "which 7.0.0",
 ]
 
 [[package]]
@@ -301,7 +301,21 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
- "thiserror",
+ "thiserror 1.0.64",
+]
+
+[[package]]
+name = "cargo_metadata"
+version = "0.19.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8769706aad5d996120af43197bf46ef6ad0fda35216b4505f926a365a232d924"
+dependencies = [
+ "camino",
+ "cargo-platform",
+ "semver",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.8",
 ]
 
 [[package]]
@@ -430,7 +444,7 @@ dependencies = [
  "heck 0.5.0",
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -610,7 +624,7 @@ checksum = "658bce805d770f407bc62102fca7c2c64ceef2fbcb2b8bd19d2765ce093980de"
 dependencies = [
  "console",
  "shell-words",
- "thiserror",
+ "thiserror 1.0.64",
  "zeroize",
 ]
 
@@ -793,6 +807,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "fs-err"
+version = "3.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8bb60e7409f34ef959985bc9d9c5ee8f5db24ee46ed9775850548021710f807f"
+dependencies = [
+ "autocfg",
+]
+
+[[package]]
 name = "futures"
 version = "0.3.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -848,7 +871,7 @@ checksum = "87750cf4b7a4c0625b1529e4c543c2182106e4dedc60a2a6455e00d212c489ac"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -1109,7 +1132,7 @@ version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "735dc8281e12cf7450b3a343c50bccdb15625f41b127d1bd7063949fe367847d"
 dependencies = [
- "fs-err",
+ "fs-err 2.11.0",
  "glob",
  "goblin",
 ]
@@ -1209,7 +1232,7 @@ dependencies = [
  "cargo-options",
  "cargo-xwin",
  "cargo-zigbuild",
- "cargo_metadata",
+ "cargo_metadata 0.18.1",
  "cbindgen",
  "cc",
  "clap",
@@ -1222,7 +1245,7 @@ dependencies = [
  "expect-test",
  "fat-macho",
  "flate2",
- "fs-err",
+ "fs-err 2.11.0",
  "glob",
  "goblin",
  "ignore",
@@ -1256,10 +1279,10 @@ dependencies = [
  "serde_json",
  "sha2",
  "tar",
- "target-lexicon",
+ "target-lexicon 0.12.16",
  "tempfile",
  "textwrap",
- "thiserror",
+ "thiserror 1.0.64",
  "time",
  "toml 0.8.15",
  "toml_edit 0.22.16",
@@ -1447,7 +1470,7 @@ checksum = "a948666b637a0f465e8564c73e89d4dde00d72d4d473cc972f390fc3dcee7d9c"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -1549,7 +1572,7 @@ dependencies = [
  "pep440_rs",
  "regex",
  "serde",
- "thiserror",
+ "thiserror 1.0.64",
  "tracing",
  "unicode-width",
  "url",
@@ -1635,9 +1658,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.85"
+version = "1.0.92"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "22244ce15aa966053a896d1accb3a6e68469b97c7f33f284b99f0d576879fc23"
+checksum = "37d3544b3f2748c54e147655edb5025752e2303145b5aefb3c3ea2c78b973bb0"
 dependencies = [
  "unicode-ident",
 ]
@@ -1671,11 +1694,11 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba3f3f0d552c7efdde2b6898bf21b49c4e76b3e6071ff196dfe52109804db896"
 dependencies = [
  "flate2",
- "fs-err",
+ "fs-err 2.11.0",
  "mailparse",
  "rfc2047-decoder",
  "tar",
- "thiserror",
+ "thiserror 1.0.64",
  "zip",
 ]
 
@@ -1770,7 +1793,7 @@ checksum = "bd283d9651eeda4b2a83a43c1c91b266c40fd76ecd39a50a8c630ae69dc72891"
 dependencies = [
  "getrandom",
  "libredox",
- "thiserror",
+ "thiserror 1.0.64",
 ]
 
 [[package]]
@@ -1834,7 +1857,7 @@ dependencies = [
  "chumsky",
  "memchr",
  "quoted_printable",
- "thiserror",
+ "thiserror 1.0.64",
 ]
 
 [[package]]
@@ -1878,7 +1901,7 @@ dependencies = [
  "regex",
  "relative-path",
  "rustc_version",
- "syn 2.0.76",
+ "syn 2.0.90",
  "unicode-ident",
 ]
 
@@ -2002,7 +2025,7 @@ dependencies = [
  "proc-macro2",
  "quote",
  "serde_derive_internals",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -2028,7 +2051,7 @@ checksum = "7f81c2fde025af7e69b1d1420531c8a8811ca898919db177141a85313b1cb932"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -2080,7 +2103,7 @@ checksum = "243902eda00fad750862fc144cea25caca5e20d615af0a81bee94ca738f1df1f"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -2091,7 +2114,7 @@ checksum = "18d26a20a969b9e3fdf2fc2d9f21eda6c40e2de84c9408bb5d3b05d499aae711"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -2266,9 +2289,9 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "2.0.76"
+version = "2.0.90"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "578e081a14e0cefc3279b0472138c513f37b41a08d5a3cca9b6e4e8ceb6cd525"
+checksum = "919d3b74a5dd0ccd15aeb8f93e7006bd9e14c295087c9896a110f490752bcf31"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2291,6 +2314,12 @@ name = "target-lexicon"
 version = "0.12.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "61c41af27dd6d1e27b1b16b489db798443478cef1f06a660c96db617ba5de3b1"
+
+[[package]]
+name = "target-lexicon"
+version = "0.13.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4ff4a4048091358129767b8a200d6927f58876c8b5ea16fb7b0222d43b79bfa8"
 
 [[package]]
 name = "tempfile"
@@ -2341,7 +2370,16 @@ version = "1.0.64"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d50af8abc119fb8bb6dbabcfa89656f46f84aa0ac7688088608076ad2b459a84"
 dependencies = [
- "thiserror-impl",
+ "thiserror-impl 1.0.64",
+]
+
+[[package]]
+name = "thiserror"
+version = "2.0.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08f5383f3e0071702bf93ab5ee99b52d26936be9dedd9413067cbdcddcb6141a"
+dependencies = [
+ "thiserror-impl 2.0.8",
 ]
 
 [[package]]
@@ -2352,7 +2390,18 @@ checksum = "08904e7672f5eb876eaaf87e0ce17857500934f4981c4a0ab2b4aa98baac7fc3"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
+]
+
+[[package]]
+name = "thiserror-impl"
+version = "2.0.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f2f357fcec90b3caef6623a099691be676d033b40a058ac95d2a6ade6fa0c943"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -2483,7 +2532,7 @@ checksum = "34704c8d6ebcbc939824180af020566b01a7c01f80641264eba0999f6c2b6be7"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
@@ -2771,6 +2820,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "which"
+version = "7.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c9cad3279ade7346b96e38731a641d7343dd6a53d55083dd54eadfa5a1b38c6b"
+dependencies = [
+ "either",
+ "home",
+ "rustix",
+ "winsafe",
+]
+
+[[package]]
 name = "wild"
 version = "2.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3042,7 +3103,7 @@ checksum = "15e934569e47891f7d9411f1a451d947a60e000ab3bd24fbb970f000387d1b3b"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.76",
+ "syn 2.0.90",
 ]
 
 [[package]]
